@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <title>Stopwatch</title>
+</head>
+<body>
+    
+    <div class="stopwatch-container">
+        <div class="outer-circle">
+            <div class="inner-circle">
+                <div class="time-display">
+                    <span class="time-text min">00</span>:<span class="time-text sec">00</span>:<span class="time-text msec">00</span>
+                </div>
+            </div>
+            <div class="rotating-dot rotating"></div>
+        </div>
+        <div class="button">
+            <button class="btn start">Start</button>
+            <button class="btn lap hidden">Lap</button>
+            <button class="btn reset hidden">Reset</button>
+        </div>
+        <ul class="lap-list hidden">
+            <button class="btn clear-laps hidden">Clear Laps</button>
+        </ul>
+    </div>
+    <script src="scripts/script.js" defer></script>
+
+</body>
+</html>
